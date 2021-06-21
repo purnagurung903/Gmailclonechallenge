@@ -12,9 +12,9 @@ function Header(){
     <Wrapper>
       <LogoWrapper>
 
-        <div>
+        <Menu>
            <MenuIcon />
-        </div>
+        </Menu>
         <Logo>
         <img src="https://cdn.vox-cdn.com/thumbor/ttJ6TTVOWTTi2p3EaeeLfS4fUS8=/0x0:1320x880/1400x933/filters:focal(555x335:765x545):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/67587450/newgmaillogo.0.jpg" />
         </Logo>
@@ -50,11 +50,46 @@ align-items: center;
 const LogoWrapper = styled.div`
 height: 45px;
 display: grid;
-grid-template-columns: 25% auto;`
+grid-template-columns: 25% auto;
+`
 const Logo = styled.div`
 display: flex;
 height: 45px;
 `
+const Menu = styled.div`
+display: grid;
+place-items: center;
+`
 const SearchWrapper = styled.div``
-const SearchBarWrapper = styled.div``
-const IconsWrapper = styled.div``
+const SearchBarWrapper = styled.div`
+background-color: #f1f3f4;
+width: 100%;
+max-width: 750px;
+display: grid;
+grid-template-columns: 10% auto 7%;
+place-items: center;
+height: 45px;
+border-radius: 6px;
+
+.MuiSvgIcon-root{
+  color: #5f6368;
+}
+input {
+  width: 100%;
+  height: 30px;
+  background: none;
+  border: none;
+  font-size: 18px;
+
+  :focus{
+    outline: none;
+  }
+}
+`
+const IconsWrapper = styled.div`
+display: grid;
+grid-template-columns: repeat(4, auto);
+.MuiSvgIcon-root{
+  color: #5f6368;
+}
+`
