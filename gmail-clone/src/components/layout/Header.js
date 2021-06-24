@@ -87,8 +87,10 @@ input {
 }
 `
 const IconsWrapper = styled.div`
+margin-left: 8px;
 display: grid;
 grid-template-columns: repeat(4, auto);
+
 .MuiSvgIcon-root{
   color: #5f6368;
 }
