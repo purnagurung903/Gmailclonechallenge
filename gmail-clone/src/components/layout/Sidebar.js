@@ -10,16 +10,19 @@ import { bottomIcons } from "../data/BottomIconsData"
 function Sidebar ()  {
   return (
     <Wrapper>
-     <ComposeWrapper>
-       <Compose />
-     </ComposeWrapper>
-     <SideButtonWrapper>
-       {
-          sidebarButtonItems.map(item => (
+      <TopSectionWrapper>
+         <ComposeWrapper>
+           <Compose />
+        </ComposeWrapper>
+         <SideButtonWrapper>
+          {
+              sidebarButtonItems.map(item => (
             <SidebarButtonItem>{item.icon} {item.text}</SidebarButtonItem>
           ))
-        }
-     </SideButtonWrapper>
+             }
+        </SideButtonWrapper>
+     </TopSectionWrapper>
+     <BottomSectionWrapper>
      <SidebarSectionWrapper>
        <Title>Meet</Title>
        <p><VideocamIcon /> New Meeting</p>
@@ -39,7 +42,8 @@ function Sidebar ()  {
          ))
        }
      </ButtonIconsWrapper>
-     {/*<sidebarButtonItems />*/}
+     </BottomSectionWrapper>
+     
     </Wrapper>
 
   )
@@ -50,9 +54,16 @@ export default Sidebar;
 
 const Wrapper = styled.div`
 border-right: 1px solid lightgray;
-height: 100vh;
+height: calc(100vh - 70px);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+ 
 `
-
+const BottomSectionWrapper =styled.div`
+margin-bottom: 30px;
+`
+const TopSectionWrapper = styled.div``
 const ComposeWrapper = styled.div`
 display: grid;
 place-items: start;
@@ -73,8 +84,7 @@ margin-right: 8px;
 }`
 
 const SidebarSectionWrapper = styled.div`
-position: relative;
-top: 300px;
+
 border-top: 1px solid lightgray;
 
 p{
@@ -95,4 +105,11 @@ margin-top: 8px;
 
 const ButtonIconsWrapper = styled.div`
 display: flex;
-justify-content: center;`
+justify-content: center;
+color: gray;
+border-top: 1px solid lightgray;
+margin-top: 60px;
+
+.MuiSvgIcon-root{
+  padding: 2px;
+}`
