@@ -7,43 +7,43 @@ import KeyboardIcon from '@material-ui/icons/Keyboard';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { bottomIcons } from "../data/BottomIconsData"
 
-function Sidebar ()  {
+function Sidebar() {
   return (
     <Wrapper>
       <TopSectionWrapper>
-         <ComposeWrapper>
-           <Compose />
+        <ComposeWrapper>
+          <Compose />
         </ComposeWrapper>
-         <SideButtonWrapper>
+        <SideButtonWrapper>
           {
-              sidebarButtonItems.map(item => (
-            <SidebarButtonItem>{item.icon} {item.text}</SidebarButtonItem>
-          ))
-             }
+            sidebarButtonItems.map(item => (
+              <SidebarButtonItem>{item.icon} {item.text}</SidebarButtonItem>
+            ))
+          }
         </SideButtonWrapper>
-     </TopSectionWrapper>
-     <BottomSectionWrapper>
-     <SidebarSectionWrapper>
-       <Title>Meet</Title>
-       <p><VideocamIcon /> New Meeting</p>
-       <p><KeyboardIcon/>Join Meeting</p>
-     </SidebarSectionWrapper>
-     <SidebarSectionWrapper>
-       <Title>Hangouts</Title>
-       <p><AccountCircleIcon/>Purna Gurung</p>
-     </SidebarSectionWrapper>
-     <ButtonIconsWrapper>
-       
-       {
-         bottomIcons.map(icon => (
-           <>
-             {icon}
-           </>
-         ))
-       }
-     </ButtonIconsWrapper>
-     </BottomSectionWrapper>
-     
+      </TopSectionWrapper>
+      <BottomSectionWrapper>
+        <SidebarSectionWrapper>
+          <Title>Meet</Title>
+          <p><VideocamIcon /> New Meeting</p>
+          <p><KeyboardIcon />Join Meeting</p>
+        </SidebarSectionWrapper>
+        <SidebarSectionWrapper>
+          <Title>Hangouts</Title>
+          <p><AccountCircleIcon />Purna Gurung</p>
+        </SidebarSectionWrapper>
+        <ButtonIconsWrapper>
+
+          {
+            bottomIcons.map(icon => (
+              <>
+                {icon}
+              </>
+            ))
+          }
+        </ButtonIconsWrapper>
+      </BottomSectionWrapper>
+
     </Wrapper>
 
   )
@@ -60,7 +60,7 @@ flex-direction: column;
 justify-content: space-between;
  
 `
-const BottomSectionWrapper =styled.div`
+const BottomSectionWrapper = styled.div`
 margin-bottom: 30px;
 `
 const TopSectionWrapper = styled.div``
