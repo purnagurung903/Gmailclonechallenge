@@ -18,4 +18,4 @@ export default Main;
 
 const Wrapper = styled.div`
 display: grid;
-grid-tamplate-columns: 270px auto 50px;`
+grid-template-columns: 270px auto 50px;`

@@ -23,7 +23,8 @@ function Header(){
       <SearchWrapper>
 
         <SearchBarWrapper>
-           <SearchIcon />
+          <SearchIconWrapper />
+           {/*<SearchIcon />*/}
            <input type="text" placeholder="Search mail" />
            <ExpandMoreIcon />
         </SearchBarWrapper>
@@ -51,11 +52,15 @@ const LogoWrapper = styled.div`
 height: 45px;
 display: grid;
 grid-template-columns: 25% auto;
+
+
 `
 const Logo = styled.div`
 display: flex;
 height: 45px;
 `
+const SearchIconWrapper = styled(SearchIcon)`
+color: #5f6368;`
 const Menu = styled.div`
 display: grid;
 place-items: center;

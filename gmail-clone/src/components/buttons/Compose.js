@@ -29,7 +29,7 @@ font-size: 0.875rem;
 transition: box-shadow .08s linear, min-width .15s cubic-bezier(0.4,0.0,0.2,1)
 
 :hover {
-   box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%)
-   background-color: #fafafb;
+  box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%)
+  background-color: #fafafb;
 }
 `

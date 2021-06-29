@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components"
 
-function SideIcons() {
+function SideIcons ()  {
   return (
 <div>purna</div>
 
