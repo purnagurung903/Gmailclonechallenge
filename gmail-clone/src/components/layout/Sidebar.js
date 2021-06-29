@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import Compose from "../buttons/Compose";
 import { sidebarButtonItems } from "../data/SidebarButtonItems";
+import VideocamIcon from '@material-ui/icons/Videocam';
+import KeyboardIcon from '@material-ui/icons/Keyboard';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import { bottomIcons } from "../data/BottomIconsData"
 
 function Sidebar ()  {
   return (
@@ -16,14 +20,24 @@ function Sidebar ()  {
           ))
         }
      </SideButtonWrapper>
-     <MeetWrapper>
-       {/*google meet stuff */}
-     </MeetWrapper>
-     <HangoutsWrapper>
-       {/*hangout stuff */}
-     </HangoutsWrapper>
+     <SidebarSectionWrapper>
+       <Title>Meet</Title>
+       <p><VideocamIcon /> New Meeting</p>
+       <p><KeyboardIcon/>Join Meeting</p>
+     </SidebarSectionWrapper>
+     <SidebarSectionWrapper>
+       <Title>Hangouts</Title>
+       <p><AccountCircleIcon/>Purna Gurung</p>
+     </SidebarSectionWrapper>
      <ButtonIconsWrapper>
        
+       {
+         bottomIcons.map(icon => (
+           <>
+             {icon}
+           </>
+         ))
+       }
      </ButtonIconsWrapper>
      {/*<sidebarButtonItems />*/}
     </Wrapper>
@@ -58,8 +72,27 @@ margin-right: 8px;
   background-color: #f5f7f7;
 }`
 
-const MeetWrapper = styled.div``
+const SidebarSectionWrapper = styled.div`
+position: relative;
+top: 300px;
+border-top: 1px solid lightgray;
 
-const HangoutsWrapper = styled.div``
+p{
+  color: gray;
+  display: grid;
+  grid-template-columns: 14% auto;
+  height: 30px;
+  align-items: center;
+  padding-left: 25px;
+}
+`
+const Title = styled.div`
+padding-left: 25px;
+margin-bottom: 3px;
+margin-top: 8px;
+`
 
-const ButtonIconsWrapper = styled.div``
+
+const ButtonIconsWrapper = styled.div`
+display: flex;
+justify-content: center;`
