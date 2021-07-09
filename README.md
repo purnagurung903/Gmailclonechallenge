@@ -6,7 +6,7 @@
 ## Discription
  This is Simple gmail clone app I build this app to improve my skills. I build this app using react with Styled component and Material UI from scratch
 
- ### Github repo: git@github.com:purnagurung903/Gmailclonechallenge.git
+ ### Github repo: https://github.com/purnagurung903/Gmailclonechallenge.git
 
  ### Deployed app: https://purnagurung903.github.io/Gmailclonechallenge/
 
