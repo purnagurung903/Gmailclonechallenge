@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/gmail-clone/static/css/main.07ded3df.chunk.css",
-    "main.js": "/gmail-clone/static/js/main.d2395035.chunk.js",
-    "main.js.map": "/gmail-clone/static/js/main.d2395035.chunk.js.map",
-    "runtime-main.js": "/gmail-clone/static/js/runtime-main.d667deba.js",
-    "runtime-main.js.map": "/gmail-clone/static/js/runtime-main.d667deba.js.map",
-    "static/js/2.78706189.chunk.js": "/gmail-clone/static/js/2.78706189.chunk.js",
-    "static/js/2.78706189.chunk.js.map": "/gmail-clone/static/js/2.78706189.chunk.js.map",
-    "static/js/3.9d28dca3.chunk.js": "/gmail-clone/static/js/3.9d28dca3.chunk.js",
-    "static/js/3.9d28dca3.chunk.js.map": "/gmail-clone/static/js/3.9d28dca3.chunk.js.map",
-    "index.html": "/gmail-clone/index.html",
-    "static/css/main.07ded3df.chunk.css.map": "/gmail-clone/static/css/main.07ded3df.chunk.css.map",
-    "static/js/2.78706189.chunk.js.LICENSE.txt": "/gmail-clone/static/js/2.78706189.chunk.js.LICENSE.txt"
+    "main.css": "/Gmailclonechallenge/static/css/main.07ded3df.chunk.css",
+    "main.js": "/Gmailclonechallenge/static/js/main.d2395035.chunk.js",
+    "main.js.map": "/Gmailclonechallenge/static/js/main.d2395035.chunk.js.map",
+    "runtime-main.js": "/Gmailclonechallenge/static/js/runtime-main.f6e5865f.js",
+    "runtime-main.js.map": "/Gmailclonechallenge/static/js/runtime-main.f6e5865f.js.map",
+    "static/js/2.3ed022fe.chunk.js": "/Gmailclonechallenge/static/js/2.3ed022fe.chunk.js",
+    "static/js/2.3ed022fe.chunk.js.map": "/Gmailclonechallenge/static/js/2.3ed022fe.chunk.js.map",
+    "static/js/3.9d28dca3.chunk.js": "/Gmailclonechallenge/static/js/3.9d28dca3.chunk.js",
+    "static/js/3.9d28dca3.chunk.js.map": "/Gmailclonechallenge/static/js/3.9d28dca3.chunk.js.map",
+    "index.html": "/Gmailclonechallenge/index.html",
+    "static/css/main.07ded3df.chunk.css.map": "/Gmailclonechallenge/static/css/main.07ded3df.chunk.css.map",
+    "static/js/2.3ed022fe.chunk.js.LICENSE.txt": "/Gmailclonechallenge/static/js/2.3ed022fe.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d667deba.js",
-    "static/js/2.78706189.chunk.js",
+    "static/js/runtime-main.f6e5865f.js",
+    "static/js/2.3ed022fe.chunk.js",
     "static/css/main.07ded3df.chunk.css",
     "static/js/main.d2395035.chunk.js"
   ]
